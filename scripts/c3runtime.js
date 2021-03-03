@@ -3148,6 +3148,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => 0,
 		() => "clear",
 		() => "fail",
+		() => 60,
 		() => "idle",
 		() => 0.1,
 		p => {
@@ -3227,7 +3228,6 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject(1);
 		},
-		() => 60,
 		() => 120,
 		() => 860,
 		p => {
