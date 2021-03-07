@@ -3223,7 +3223,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => 1,
 		() => "clear",
 		() => "fail",
-		() => 60,
+		() => 90,
 		() => "idle",
 		() => 0.1,
 		p => {
@@ -3295,15 +3295,18 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		},
 		() => "left",
 		() => 2,
+		() => 25,
+		() => 155,
+		() => 3,
 		() => 30,
 		() => 150,
-		() => 3,
 		() => "throw",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject(1);
 		},
 		() => "scroll",
+		() => 60,
 		() => 120,
 		() => 860,
 		p => {
@@ -3342,9 +3345,6 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => "你",
 		() => "他",
 		() => "好",
-		() => "叫",
-		() => "不",
-		() => "是",
 		() => "鼠",
 		() => "牛",
 		() => "虎",
@@ -3358,8 +3358,6 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => "狗",
 		() => "豬。",
 		() => "誰",
-		() => "這",
-		() => "那",
 		() => "人",
 		() => "大",
 		() => "小",
@@ -3373,14 +3371,9 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => "妹妹",
 		() => "名字",
 		() => "什麼",
-		() => "大人",
-		() => "小孩",
 		() => "不是",
-		() => "好人",
 		() => "小羊",
-		() => "小狗",
-		() => "小牛",
-		() => "老鼠"
+		() => "小狗"
 	];
 }
 
