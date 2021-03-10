@@ -3053,6 +3053,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		C3.Plugins.Audio.Acts.SetVolume,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
+		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Arr.Acts.Push
 		];
 	};
@@ -3109,7 +3110,10 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		{correctIndex: 0},
 		{wrongIndex: 0},
 		{second: 0},
-		{minute: 0}
+		{minute: 0},
+		{words: 0},
+		{index: 0},
+		{correct: 0}
 	];
 }
 
@@ -3295,11 +3299,9 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		},
 		() => "left",
 		() => 2,
-		() => 25,
-		() => 155,
+		() => 10,
+		() => 178,
 		() => 3,
-		() => 30,
-		() => 150,
 		() => "throw",
 		p => {
 			const n0 = p._GetNode(0);
@@ -3315,11 +3317,11 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		},
 		() => "reel",
 		() => 1060,
-		() => 10,
 		() => 270,
 		() => "minus",
 		() => "scared",
 		() => "score",
+		() => 150,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 10);
