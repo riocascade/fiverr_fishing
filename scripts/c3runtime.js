@@ -3095,6 +3095,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		{FailPopup: 0},
 		{maxFish: 0},
 		{level: 0},
+		{maxLevel: 0},
 		{MOVE_LEFT: 0},
 		{MOVE_RIGHT: 0},
 		{STRING_MAX_DISTANCE: 0},
@@ -3327,6 +3328,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 			return () => (n0.ExpObject() - 10);
 		},
 		() => "resultScore",
+		() => "replay",
 		() => 100,
 		() => -20,
 		p => {
